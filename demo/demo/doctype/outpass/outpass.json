@@ -1,0 +1,111 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:DM-OP-{#####}",
+ "creation": "2024-11-20 11:28:34.948629",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_blwh",
+  "amended_from",
+  "section_break_yehl",
+  "customer",
+  "return_due_date",
+  "customer_address",
+  "column_break_iaow",
+  "source_warehouse",
+  "remarks",
+  "section_break_ehnl",
+  "demo_item"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_blwh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_primary_address",
+   "fieldname": "customer_address",
+   "fieldtype": "Small Text",
+   "label": "Customer Address"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Outpass",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_yehl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_iaow",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "source_warehouse",
+   "fieldtype": "Link",
+   "label": "Source Warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "section_break_ehnl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "demo_item",
+   "fieldtype": "Table",
+   "label": "Demo Item",
+   "options": "Stock Entry Detail"
+  },
+  {
+   "fieldname": "return_due_date",
+   "fieldtype": "Date",
+   "label": "Return Due Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-20 11:44:13.505644",
+ "modified_by": "Administrator",
+ "module": "Demo",
+ "name": "Outpass",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
