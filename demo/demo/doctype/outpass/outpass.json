@@ -15,6 +15,7 @@
   "column_break_iaow",
   "source_warehouse",
   "remarks",
+  "sample",
   "section_break_ehnl",
   "demo_item"
  ],
@@ -79,12 +80,17 @@
    "fieldname": "return_due_date",
    "fieldtype": "Date",
    "label": "Return Due Date"
+  },
+  {
+   "fieldname": "sample",
+   "fieldtype": "Attach Image",
+   "label": "Sample"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-20 11:44:13.505644",
+ "modified": "2024-11-20 12:43:30.656228",
  "modified_by": "Administrator",
  "module": "Demo",
  "name": "Outpass",
